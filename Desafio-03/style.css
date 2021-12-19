@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#primeiro-paragrafo{
+    background-color: #F5F5F5;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+#segundo-paragrafo{
+    background-color: #F0CCE2;
+    font-weight: bolder;
+
+    padding: 20px;
+    margin: 20px;
+}
