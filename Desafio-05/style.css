@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;800&display=swap');
+/* font-family: 'Public Sans', sans-serif; */
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Public Sans', sans-serif;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    align-items: center; /* Repetindo código... Dava pra fazer o h1 e a imagem numa única tag? */
+}
+
+img{
+    width: 80px;
+    height: 40px;
+}
+
+
+nav > a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+nav > a:hover{
+    background-color: #5BC241;
+    color: white;
+}
+nav > a:last-child{
+    background-color: #5BC241;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+}
+
+@media (max-width: 375px){
+    main{
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;  /* td dia repetindo código...*/
+        align-items: center;
+        font-size: 40px;
+    }
+}
