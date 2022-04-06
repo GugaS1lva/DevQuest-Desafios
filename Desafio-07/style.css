@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #F7F7F7;
+    max-width: 900px;
+    gap: 20px;
+    padding: 35px;
+    margin: 30px;
+    
+
+    display: grid;
+    grid-template-areas: 
+    "video-destaque propaganda"
+    "video-destaque relacionados";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+}
+
+.video-destaque{
+    grid-area: video-destaque;
+}
+.video-destaque img{
+    margin-bottom: 12px;
+    width: 100%;
+}
+.video-destaque .informacoes h1{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.video-destaque .informacoes p{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.propaganda{
+    grid-area: propaganda;
+}
+
+.relacionados{
+    grid-area: relacionados;
+}
+
+.relacionados .video{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.informacoes-relacionadas h2{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.informacoes-relacionadas p{
+    font-size: 11px;
+    margin-bottom: 5px;
+}
