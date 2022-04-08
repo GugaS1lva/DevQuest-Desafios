@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+#container button{
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+button{
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    width: 500px;
+}
