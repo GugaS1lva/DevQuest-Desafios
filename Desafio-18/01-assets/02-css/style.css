@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top, #6581E5, #7E7BD4, #9B74C3, #B66EB0, #C96AA4, #D6669E, #DC669A);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.texts{
+    width: 320px;
+    color: white;
+    margin: 50px;
+}
+.texts h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form{
+    width: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 7px 0;
+}
+input::placeholder{
+    color: #A8A8A8;
+    font-size: 15px;
+    font-weight: bold;
+}
+textarea::placeholder{
+    color: #A8A8A8;
+    font-size: 15px;
+    font-weight: bold;
+}
+textarea{
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    resize: none;  /* BORDINHA MÓVEL DO TEXTAREA */
+}
+
+#msgInstrucao{
+    margin-top: 10px;
+    margin-bottom: -14px;
+}
+#enviar{
+    background-color: #3CCC87;
+    padding: 15px;
+    margin-top: 25px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* CLASSES PARA MANIPULAÇÃO COM JS */
+.campo-obrigatorio{
+    border: 1px solid red;
+}
+.campo-preenchido{
+    border: 1px solid green;
+}
+
+.msgAlert{
+    color: red;
+    font-size: 9px;
+    margin-top: -7px;
+}
+.msgAlertOculto{
+    opacity: 0;
+}
