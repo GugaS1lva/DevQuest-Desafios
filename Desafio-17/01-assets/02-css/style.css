@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+main{
+    background-color: #FCFCFC;
+    display: flex;
+    align-items: center;
+    width: 655px;
+    height: 350px;
+    padding: 40px;
+    margin: 100px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.329) 0px 20px 30px -10px;
+    /* box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3); */
+}
+
+#img{
+    margin-left: -130px;
+}
+#conteudo{
+    margin: 40px 0px 40px 40px;
+}
+#conteudo h1{
+    margin: 10px 0px;
+}
+
+article{
+    border-bottom: 1px solid #D4D4D4;
+}
+article:last-child{
+    border: none;
+}
+article .titulos{
+    display: flex;
+    align-items: center;
+    width: 383px;
+}
+article .titulos:hover{
+    cursor: pointer;
+}
+article a{
+    background: url(../01-image/seta.png) center center no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-left: 6%;
+    transition: 0.2s ease;
+}
+article .titulos h2{
+    margin: 5px 0px;
+}
+article p{
+    display: none;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+/* ESTILOS PARA MANIPULAÇÃO COM JS */
+article .titulos.ativo{
+    text-shadow: 2px 2px 7px #f47c57;
+}
+article p.ativo{
+    display: block;
+    text-shadow: 2px 2px 7px #f47c57;
+}
+article a.ativo{
+    background: url(../01-image/seta-aberta.png) center center no-repeat;
+}
