@@ -12,7 +12,7 @@ enviar.addEventListener('click', function(){
         } else{
             input.classList.remove('campo-obrigatorio')
             input.classList.add('campo-preenchido')
-
+            input.nextElementSibling.classList.add('msgAlertOculto')
         }
     })
 })
